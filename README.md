@@ -2,17 +2,20 @@
 
 ####  A tool defines cell types in human based on single-cell digital expression
 
-At first scHCL is a breif R package for large scale data(large DGE) from scMCA online function [Human Cell Landscape](http://bis.zju.edu.cn/HCL)  ,to alleviate burdens of our main Server. 
+
+At first scHCL  is a breif R package for large scale data(large DGE) from scHCL online function [Human Cell Landscape](http://bis.zju.edu.cn/HCL)  ,to alleviate burdens of our main Server. 
+
 
 Now we add a UI for visulizing the scHCL reuslt. 
 ### Installation
 
 ```R
 #This require devtools  
-> install.packages('devtools')
-> library(devtools)
+install.packages('devtools')
+library(devtools)
 # scHCL requires ggplot2/reshape2/plotly/shiny/shinythemes/shiny
-> install_github("ggjlab/scHCL")
+install_github("ggjlab/scHCL")
+
 ```
 
 ### Quick Start
@@ -37,7 +40,8 @@ The return of scHCL() is a list which contains 4 parts.
 
 ```R
 # open shiny for visualize result for scHCL
-> scHCL_vis(hcl_result)
+
+scHCL_vis(hcl_result)
 ```
 
 scHCL_vis() provides a bref function for visualizing and downloading of scHCL results
